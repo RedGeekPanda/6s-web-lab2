@@ -1,0 +1,75 @@
+*:empty:hover, article:hover, .hover-pulse:hover {
+    animation: pulse 1s infinite ease-in;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    flex: 1 0 0;
+    display: flex;
+    overflow: hidden;
+}
+
+header, footer, aside {
+    flex: 0 0 100px;
+}
+
+article {
+    flex: 1 0 0;
+    padding: 1em;
+    overflow-x: hidden;
+}
+
+.flex-row-container {
+    display: flex;
+}
+
+.flex-column-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-fixed-item {
+    flex: 0 0 100px;
+}
+
+.flex-fill-item {
+    flex: 1 0 0;
+}
+
+.dark-border {
+    box-sizing: border-box;
+    border: 1px solid #111a;
+}
+
+.orange-back {
+    background: orange;
+}
+
+.blue-back {
+    background: cornflowerblue;
+}
+
+.red-back {
+    background: indianred;
+}
+
+.text-highlight {
+    color: indianred;
+}

@@ -1,0 +1,7 @@
+body {
+    flex-direction: column;
+}
+
+aside {
+    flex-basis: 160px;
+}
